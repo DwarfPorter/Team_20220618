@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        Toast.makeText(this, "Загружаем", Toast.LENGTH_LONG).show()
+
         val btn = findViewById<Button>(R.id.button)
         btn.setOnClickListener{
             Toast.makeText(this, "Кнопа", Toast.LENGTH_LONG).show()
